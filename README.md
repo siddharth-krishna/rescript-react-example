@@ -1,3 +1,42 @@
+# ReScript-React Web App
+
+This repository is an example ReScript-React web app, built on top of [Create React App](https://github.com/facebook/create-react-app).
+
+## Compiling/running
+
+To compile ReScript to JS:
+```
+npm re:build
+```
+
+To compile ReScript and watch for changes:
+```
+npm re:start
+```
+
+To run the app in development mode, see the usual `npm` commands below (e.g., `npm start`).
+
+## How this project was set up
+
+https://reactjs.org/docs/create-a-new-react-app.html
+```
+npx create-react-app my-app
+cd my-app
+npm start
+```
+
+https://rescript-lang.org/docs/manual/latest/installation
+```
+npm install rescript --save-dev 
+```
+Set up `bsconfig.json` and `package.json` as described in the link above.
+
+https://rescript-lang.org/docs/react/latest/installation
+```
+npm install @rescript/react --save
+```
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
