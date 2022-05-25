@@ -13,12 +13,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "run-p start:rescript start:bundle",
+    "start:rescript": "rescript build -w",
+    "start:bundle": "react-scripts start",
+    "build": "run-s build:rescript build:bundle",
+    "build:rescript": "rescript",
+    "build:bundle": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "re:build": "rescript",
-    "re:start": "rescript build -w"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -39,6 +41,7 @@
     ]
   },
   "devDependencies": {
+    "npm-run-all": "^4.1.5",
     "rescript": "^9.1.4"
   }
 }

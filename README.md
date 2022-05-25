@@ -4,17 +4,15 @@ This repository is an example ReScript-React web app, built on top of [Create Re
 
 ## Compiling/running
 
-To compile ReScript to JS:
+Full build and bundle (ReScript -> JS -> bundle):
 ```
-npm re:build
-```
-
-To compile ReScript and watch for changes:
-```
-npm re:start
+npm build
 ```
 
-To run the app in development mode, see the usual `npm` commands below (e.g., `npm start`).
+To compile and serve locally and watch for changes:
+```
+npm start
+```
 
 ## How this project was set up
 
