@@ -34,6 +34,23 @@ https://rescript-lang.org/docs/react/latest/installation
 npm install @rescript/react --save
 ```
 
+For parallel/sequential npm script tasks:
+```
+npm install npm-run-all --save-dev
+```
+
+https://chakra-ui.com/guides/getting-started/cra-guide
+https://github.com/ri7nz/rescript-chakra#installation
+```
+npm i @chakra-ui/react @emotion/react@^11 @emotion/styled@^11 framer-motion@^6
+npm install --save rescript-chakra
+```
+
+Chakra UI [NavBar](https://github.com/hauptrolle/chakra-templates/blob/c841e536710a9d8c91c4ffecebd06cf123f11e82/src/pages/templates/navigation/navbar/withSubnavigation.tsx)
+```
+npm i @chakra-ui/icons
+```
+
 
 # Getting Started with Create React App
 
