@@ -14,16 +14,8 @@ let make = () => {
 
   <Provider>
     <NavBar />
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          {React.string("Edit ")}
-          <code> {React.string("src/App.res")} </code>
-          {React.string(" and save to reload.")}
-        </p>
-        <p>{React.string("Hello, World!")}</p> 
-      </header>
-    </div>
+    <Box marginTop={#px(64)}>  // marginTop needed to keep content below NavBar
+      <Gallery />
+    </Box>
   </Provider>
 }

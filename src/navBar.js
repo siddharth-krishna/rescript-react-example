@@ -1,3 +1,5 @@
+// Adapted from https://github.com/hauptrolle/chakra-templates
+
 import {
     Box,
     Flex,
@@ -28,6 +30,9 @@ export default function NavBar() {
   return (
     <Box>
       <Flex
+        pos="fixed"
+        top="0"
+        w={'full'}
         bg={useColorModeValue('white', 'gray.800')}
         color={useColorModeValue('gray.600', 'white')}
         minH={'60px'}
@@ -55,7 +60,7 @@ export default function NavBar() {
             textAlign={useBreakpointValue({ base: 'center', md: 'left' })}
             fontFamily={'heading'}
             color={useColorModeValue('gray.800', 'white')}>
-            Logo
+            MyApp
           </Text>
 
           <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
@@ -249,6 +254,7 @@ const MobileNavItem = ({ label, children, href }/*: NavItem*/) => {
 //   href?: string;
 // }
 
+// TODO pass this in as a Prop
 const NAV_ITEMS/*: Array<NavItem>*/ = [
   {
     label: 'Inspiration',
