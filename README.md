@@ -14,6 +14,8 @@ To compile and serve locally and watch for changes:
 npm start
 ```
 
+To change the port from the default (3000), create a file called `.env` in the root of this repository with the line `PORT=3003`, for example.
+
 ## How this project was set up
 
 https://reactjs.org/docs/create-a-new-react-app.html
